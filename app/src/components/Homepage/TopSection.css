@@ -1,43 +1,85 @@
-@keyframes animate {
+@keyframes animate1 {
     0% {
-        top:27vh;
+       
         opacity:0;
     }
     20% {
-        top:27vh;
         display:flex;
         opacity: 0.2;
     }
     40% {
-        top:28vh;
+        
         display:flex;
         opacity: 0.4;
     }
     60% {
-        top:29vh;
+        
         display:flex;
         opacity: 0.6;
     }
     80%{
-        top:29.5vh;
+        
         display:flex;
         opacity: 0.8;
     }
     100%{
-        top: 30vh;
+        
         display: flex;
         opacity: 1;
     }
 }
+@keyframes animate0 {
+    0% {
+        top:25vh;
+        opacity:0;
+    }
+    20% {
+        top:26vh;
+        display:flex;
+        opacity: 0.2;
+    }
+    40% {
+        top:27vh;
+        display:flex;
+        opacity: 0.4;
+    }
+    60% {
+        top:28vh;
+        display:flex;
+        opacity: 0.6;
+    }
+    80%{
+        top:29vh;
+        display:flex;
+        opacity: 0.8;
+    }
+    100%{
+        top:30vh;
+        display: flex;
+        opacity: 1;
+    }
+}
+
 .before-text{
     display: none;
 }
 .center-text{
-    animation: animate 0.5s;
+    animation: animate0 0.5s;
     transition: all;
     top:30vh;
 }
 .facebook-group:hover{
     background-color: #4194c7;
     color:white;
+}
+.showNavbarItem{
+    animation: animate1 0.3s;
+    transition: all;
+    
+}
+.dontShowNavbarItem{
+    display: none;;
+}
+.navbar-buttons:hover{
+   padding-left: 1cm;
 }
